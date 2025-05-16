@@ -12,11 +12,15 @@
         "executor": "nx:run-commands",
         "options": {
           "command": "webpack-cli build",
-          "args": ["node-env=production"]
+          "args": [
+            "node-env=production"
+          ]
         },
         "configurations": {
           "development": {
-            "args": ["node-env=development"]
+            "args": [
+              "node-env=development"
+            ]
           }
         }
       },
@@ -24,7 +28,9 @@
         "continuous": true,
         "executor": "@nx/js:node",
         "defaultConfiguration": "development",
-        "dependsOn": ["build"],
+        "dependsOn": [
+          "build"
+        ],
         "options": {
           "buildTarget": "@schedula-monorepo/web-api:build",
           "runBuildTargetDependencies": false
@@ -46,6 +52,8 @@
     }
   },
   "devDependencies": {
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
     "webpack": "^5.99.8",
     "webpack-cli": "^6.0.1"
   }

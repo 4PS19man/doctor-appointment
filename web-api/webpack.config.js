@@ -13,21 +13,15 @@ module.exports = {
     extensions: ['.ts', '.js'], // So Webpack resolves TS and JS files
   },
   module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      }
-    ]
+    rules: [] // ✅ Removed ts-loader, NxAppWebpackPlugin handles compilation
   },
   plugins: [
     new NxAppWebpackPlugin({
       target: 'node',
-      compiler: 'tsc',
+      compiler: 'tsc', // ✅ Uses TypeScript compiler, not Babel or ts-loader
       main: './src/main.ts',
       tsConfig: './tsconfig.app.json',
-      assets: ["./src/assets"],
+      assets: ['./src/assets'],
       optimization: false,
       outputHashing: 'none',
       generatePackageJson: true,
