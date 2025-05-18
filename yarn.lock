@@ -9869,7 +9869,7 @@ ts-jest@^29.1.0:
     type-fest "^4.41.0"
     yargs-parser "^21.1.1"
 
-ts-loader@^9.3.1:
+ts-loader@^9.3.1, ts-loader@^9.5.2:
   version "9.5.2"
   resolved "https://registry.npmjs.org/ts-loader/-/ts-loader-9.5.2.tgz"
   integrity sha512-Qo4piXvOTWcMGIgRiuFa6nHNm+54HbYaZCKqc9eeZCLRy3XqafQgwX2F7mofrbJG3g7EEb+lkiR+z2Lic2s3Zw==
@@ -9976,6 +9976,11 @@ typescript@*, "typescript@^3 || ^4 || ^5", "typescript@^4.9.0 || ^5.0.0", "types
   version "5.7.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.7.3.tgz"
   integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
+
+typescript@^5.8.3:
+  version "5.8.3"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz"
+  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
 
 uid@2.0.2:
   version "2.0.2"
