@@ -2,23 +2,23 @@ const { NxAppWebpackPlugin } = require('@nx/webpack/app-plugin');
 const { join } = require('path');
 
 module.exports = {
-  target: 'node', // Ensure Node.js build
-  mode: 'production', // Optional: can be overridden via CLI
-  entry: './src/main.ts', // Entry point of your app
+  target: 'node', 
+  mode: 'production', 
+  entry: './src/main.ts', 
   output: {
-    path: join(__dirname, 'dist'), // Output folder
-    filename: 'main.js',           // ✅ Output file will be dist/main.js
+    path: join(__dirname, 'dist'), 
+    filename: 'main.js',           
   },
   resolve: {
-    extensions: ['.ts', '.js'], // So Webpack resolves TS and JS files
+    extensions: ['.ts', '.js'], 
   },
   module: {
-    rules: [] // ✅ Removed ts-loader, NxAppWebpackPlugin handles compilation
+    rules: [] 
   },
   plugins: [
     new NxAppWebpackPlugin({
       target: 'node',
-      compiler: 'tsc', // ✅ Uses TypeScript compiler, not Babel or ts-loader
+      compiler: 'tsc', 
       main: './src/main.ts',
       tsConfig: './tsconfig.app.json',
       assets: ['./src/assets'],
