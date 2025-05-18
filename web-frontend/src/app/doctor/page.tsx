@@ -10,7 +10,7 @@ export default function Page() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('http://api.schedula.localhost:3001/api/doctors')
+    fetch('https://doctor-appointment-16.onrender.com/api/doctors')
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch');
         return res.json();
