@@ -1,12 +1,26 @@
 
 
-import { Controller, Get } from '@nestjs/common';
+// import { Controller, Get } from '@nestjs/common';
 
-@Controller('/doctors')
+// @Controller('/doctors')
+// export class DoctorsController {
+//   @Get()
+//   getAllDoctors() {
+//     return { message: 'hello Doctor' };
+//   }
+// }
+
+
+import { Controller, Get } from '@nestjs/common';
+import { DoctorsService } from './doctors.service';
+
+@Controller('doctors')
 export class DoctorsController {
+  constructor(private readonly doctorsService: DoctorsService) {}
+
   @Get()
-  getAllDoctors() {
-    return { message: 'hello Doctor' };
+  getDoctors() {
+    return this.doctorsService.getDoctors();
   }
 }
 

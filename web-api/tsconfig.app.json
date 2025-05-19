@@ -1,15 +1,46 @@
+// {
+//   "extends": "../tsconfig.base.json",
+//   "compilerOptions": {
+//     "outDir": "dist",
+//     "types": [
+//       "node"
+//     ],
+//     "rootDir": "src",
+//     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+//     "experimentalDecorators": true,
+//     "emitDecoratorMetadata": true,
+//     "target": "es2021"
+//   },
+//   "include": [
+//     "src/**/*.ts"
+//   ],
+//   "exclude": [
+//     "out-tsc",
+//     "dist",
+//     "jest.config.ts",
+//     "src/**/*.spec.ts",
+//     "src/**/*.test.ts",
+//     "eslint.config.js",
+//     "eslint.config.cjs",
+//     "eslint.config.mjs"
+//   ]
+// }
+
+
+
+
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "rootDir": "src",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "target": "es2021"
+    "target": "es2021",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
   },
   "include": [
     "src/**/*.ts"
@@ -17,7 +48,7 @@
   "exclude": [
     "out-tsc",
     "dist",
-    "jest.config.ts",
+    "jest.config.js",
     "src/**/*.spec.ts",
     "src/**/*.test.ts",
     "eslint.config.js",
