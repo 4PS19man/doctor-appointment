@@ -8,8 +8,8 @@ export default function Page() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    // fetch('https://doctor-appointment-16.onrender.com/api/patients')
-    fetch('http://api.schedula.localhost:3001/api/patients')
+    fetch('https://doctor-appointment-16.onrender.com/api/patients')
+    // fetch('http://api.schedula.localhost:3001/api/patients')
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch');
         return res.json();
