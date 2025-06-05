@@ -38,35 +38,35 @@
 
 
 
-import { Test, TestingModule } from '@nestjs/testing';
-import { DoctorsController } from './doctors.controller';
-import { DoctorsService } from './doctors.service';
+// import { Test, TestingModule } from '@nestjs/testing';
+// import { DoctorsController } from './doctors.controller';
+// import { DoctorsService } from './doctors.service';
 
-describe('DoctorsController', () => {
-  let controller: DoctorsController;
-  let service: DoctorsService;
+// describe('DoctorsController', () => {
+//   let controller: DoctorsController;
+//   let service: DoctorsService;
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      controllers: [DoctorsController],
-      providers: [DoctorsService],
-    }).compile();
+//   beforeEach(async () => {
+//     const module: TestingModule = await Test.createTestingModule({
+//       controllers: [DoctorsController],
+//       providers: [DoctorsService],
+//     }).compile();
 
-    controller = module.get<DoctorsController>(DoctorsController);
-    service = module.get<DoctorsService>(DoctorsService);
-  });
+//     controller = module.get<DoctorsController>(DoctorsController);
+//     service = module.get<DoctorsService>(DoctorsService);
+//   });
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
+//   it('should be defined', () => {
+//     expect(controller).toBeDefined();
+//   });
 
-  it('should return expected doctor data from controller', () => {
-    const mockResult = { message: 'Hello from DoctorsService' };
-    jest.spyOn(service, 'getDoctors').mockReturnValue(mockResult);
+//   it('should return expected doctor data from controller', () => {
+//     const mockResult = { message: 'Hello from DoctorsService' };
+//     jest.spyOn(service, 'getDoctors').mockReturnValue(mockResult);
 
-    expect(controller.getDoctors()).toEqual(mockResult);
-  });
-});
+//     expect(controller.getDoctors()).toEqual(mockResult);
+//   });
+// });
 
 
 

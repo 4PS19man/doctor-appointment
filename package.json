@@ -10,8 +10,8 @@
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
     "next": "~15.2.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0"
   },

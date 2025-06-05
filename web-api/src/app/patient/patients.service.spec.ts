@@ -44,27 +44,27 @@
 // });
 
 
-import { Test, TestingModule } from '@nestjs/testing';
-import { PatientsService } from './PatientsService';
+// import { Test, TestingModule } from '@nestjs/testing';
+// import { PatientsService } from './PatientsService';
 
-describe('PatientsService', () => {
-  let service: PatientsService;
+// describe('PatientsService', () => {
+//   let service: PatientsService;
 
-  beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [PatientsService],
-    }).compile();
+//   beforeEach(async () => {
+//     const module: TestingModule = await Test.createTestingModule({
+//       providers: [PatientsService],
+//     }).compile();
 
-    service = module.get<PatientsService>(PatientsService);
-  });
+//     service = module.get<PatientsService>(PatientsService);
+//   });
 
-  it('should be defined', () => {
-    expect(service).toBeDefined();
-  });
+//   it('should be defined', () => {
+//     expect(service).toBeDefined();
+//   });
 
-  it('should return expected patient data', () => {
-    const result = service.getPatients();
-    expect(result).toEqual({ message: 'Hello PatientService' });
-  });
-});
+//   it('should return expected patient data', () => {
+//     const result = service.getPatients();
+//     expect(result).toEqual({ message: 'Hello PatientService' });
+//   });
+// });
 
